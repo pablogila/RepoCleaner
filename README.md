@@ -5,7 +5,10 @@ It will NOT delete itself, so you can add CLEAN.py to your .gitignore file witho
 To clean your folder, you just have to execute it:\
 `python3 CLEAN.py`
 
-It has the following functions:
+
+## Customization
+
+This program has the following functions:
 
 * `read_file()` reads the .gitignore file by default. You can change this file by changing the name inside the function.
 
