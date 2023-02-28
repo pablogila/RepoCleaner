@@ -1,6 +1,7 @@
 # RepoCleaner
 
 This CLEAN.py program will delete all the files listed in your .gitignore file.
+It will NOT delete itself, so you can add CLEAN.py to your .gitignore file without any fear.
 
 It has the following functions:
 

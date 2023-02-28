@@ -1,7 +1,7 @@
 """"
 
-This program cleans the current directory of all the files named in the .gitignore file.
-This .gitignore file should be in the same directory as the CLEAN.py file.
+This program cleans the current directory of all the files named in the .gitignore file, excepting for this file itself.
+The .gitignore file should be in the same directory as the CLEAN.py file.
 This file could have a different name, just make sure to change the name in the read_file() function.
 If you also want to remove the empty directories, change the comment in the last lines of the code.
 
@@ -23,8 +23,8 @@ def read_file():
 	# Now we open the file with the list of files to remove, in this case a .gitignore file
 	with open(".gitignore", "r") as f:
 		for line in f:
-			# Ignore empty lines and comments
-			if line.strip() == "" or line.startswith("#"):
+			# Ignore empty lines and comments, as well as this CLEAN.py file
+			if line.strip() == "" or line.startswith("#") or line.strip() == "CLEAN.py":
 				continue
 			patterns.append(line.strip())
 	return patterns
