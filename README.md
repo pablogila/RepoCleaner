@@ -1,7 +1,9 @@
 # RepoCleaner
 
 This CLEAN.py program will delete all the files listed in your .gitignore file.
-It will NOT delete itself, so you can add CLEAN.py to your .gitignore file without any fear.
+It will NOT delete itself, so you can add CLEAN.py to your .gitignore file without any fear.\
+To clean your folder, you just have to execute it:\
+`python3 CLEAN.py`
 
 It has the following functions:
 
@@ -11,4 +13,4 @@ It has the following functions:
 
 * `clean_directory_r()` will remove the files AND the empty directories.
 
-By default only files are deleted, BUT NOT empty directories; if you want to remove them too, you need to change the comment in the last lines of code, so comment `clean_directory()` and uncomment `clean_directory_r()`; vice-versa if you only want files but not empty folders to be removed.
+By default only files are deleted, BUT NOT empty directories; if you want to remove them too, you need to change the comment in the last lines of code, so comment `clean_directory()` and uncomment `clean_directory_r()`, or vice-versa if you only want files but not empty folders to be removed.
