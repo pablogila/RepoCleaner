@@ -2,7 +2,6 @@
 
 This CLEAN.py program will delete all the files listed in your .gitignore file.
 It will NOT delete itself, so you can add "CLEAN.py" to your .gitignore file without any fear.\
-It will NOT delete any folder or files within a folder named "OUT", a.k.a. "OUT/*" in your .gitignore.\
 To clean your folder, you just have to execute it:\
 `python3 CLEAN.py`
 

@@ -24,7 +24,7 @@ def read_file():
 	with open(".gitignore", "r") as f:
 		for line in f:
 			# Ignore empty lines and comments, as well as this CLEAN.py file. Here you can add other files to ignore.
-			if line.strip() == "" or line.startswith("#") or line.strip() == "CLEAN.py" or line.startswith("!") or line.strip() == "/OUT/*":
+			if line.strip() == "" or line.startswith("#") or line.strip() == "CLEAN.py" or line.startswith("!"):
 				continue
 			patterns.append(line.strip())
 	return patterns
