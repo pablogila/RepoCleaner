@@ -1,7 +1,8 @@
 # RepoCleaner
 
 This CLEAN.py program will delete all the files listed in your .gitignore file.
-It will NOT delete itself, so you can add CLEAN.py to your .gitignore file without any fear.\
+It will NOT delete itself, so you can add "CLEAN.py" to your .gitignore file without any fear.\
+It will NOT delete any folder or files within a folder named "OUT", a.k.a. "OUT/*" in your .gitignore.\
 To clean your folder, you just have to execute it:\
 `python3 CLEAN.py`
 
@@ -10,7 +11,7 @@ To clean your folder, you just have to execute it:\
 
 This program has the following functions:
 
-* `read_file()` reads the .gitignore file by default. You can change this file by changing the name inside the function.
+* `read_file()` reads the .gitignore file by default. You can change this file by changing the name inside the function. Here you can also modify which files and folders should be ignored.
 
 * `clean_directory()` will only remove the files, BUT NOT the empty directories.
 
